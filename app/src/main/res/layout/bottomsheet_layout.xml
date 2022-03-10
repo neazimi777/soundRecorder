@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="@drawable/bottomsheet_bg"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    android:id="@+id/my_bottomsheet"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+
+    <TextView
+        android:id="@+id/bottomsheet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bottomsheet_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        app:layout_constraintEnd_toEndOf="@+id/bottomsheet_text"
+        app:layout_constraintStart_toStartOf="@+id/bottomsheet_text"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_text" />
+
+    <SeekBar
+        android:id="@+id/bottomsheet_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

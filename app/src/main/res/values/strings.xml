@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VoiceRecorder2</string>
+    <string name="record_btn_record_text">Record</string>
+    <string name="record_btn_stop_text">Stop</string>
+    <string name="recordfragment_tag">RecordFragment</string>
+    <string name="voicelistfragment_tag">VoiceListFragment</string>
+</resources>
